@@ -1,0 +1,30 @@
+body{
+	text-align: center;
+}
+.container{
+	position: relative;
+	margin: 50px auto;
+	/*outline: 1px solid;*/
+}
+.container>a>img{
+	display: block;
+	z-index: 10;
+}
+.container>table{
+	position: absolute;
+	top: 0;left: 0;
+}
+.container>table tr>td{
+	position: absolute;
+	padding: 0;
+	border: 1px solid transparent;
+	/*过渡*/
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+table,tr,td{
+	border-spacing: 0;
+	/*单元格之间无间距*/
+	border-collapse:collapse;
+}
